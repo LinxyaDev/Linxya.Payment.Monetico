@@ -8,10 +8,20 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Title>C# Library for Monetico Payment in Asp.Net Core (.Net 6)</Title>
+    <Description>This NuGet package can be use in any Asp .Net Core project (.Net 6+)</Description>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/LinxyaDev/Linxya.Payment.Monetico</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/LinxyaDev/Linxya.Payment.Monetico.git</RepositoryUrl>
+    <Authors>Linxya;Alchiweb</Authors>
+    <PackageTags>Payment;Monetico;Asp.Net;Core;Net6;Net7;C#</PackageTags>
   </PropertyGroup>
   
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <None Include="..\README.md" Pack="true" PackagePath=""/>
+    <None Include="..\LICENSE.txt" Pack="true" PackagePath=""/>
   </ItemGroup>
   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
